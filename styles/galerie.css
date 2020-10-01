@@ -1,0 +1,31 @@
+.own-gallery {
+  display: flex;  /*flex container */
+  margin-top: 1em;
+  max-height: 100vh;
+
+  flex-direction: row; /*the direction flex items are placed in the flex container */
+  flex-wrap: wrap; /* flex items will wrap onto multiple lines, from top to bottom */
+  /* flex-start, flex-end, center, space-around, space-between */
+  justify-content: space-evenly; /* the alignment along the main axis */
+  align-items: center;
+  
+}
+
+.own-gallery a img {
+  margin: 10px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+  max-width: 25vw;
+}
+
+
+@media screen and (max-width: 992px) {
+  .own-gallery a img {
+    max-width: 20vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .own-gallery a img {
+    max-width: 15vw;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Tablouri-Canvas</title>
+	<link rel="icon" type="image/png" href="images/brush.png" sizes="16x16">
+
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<link rel="stylesheet" type="text/css" href="styles/general.css">
+
+	<!-- for bootstrap carousel -->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<!-- end of carousel -->
+
+</head>
+<body>
+
+	<!-- menu dropdown  -->
+	<div class="dropdown">
+		<button class="dropdown-button">Tablouri-Canvas</button>
+		<div class="dropdown-content">
+			<a href="#">Acasa</a>
+			<a href="contact.html">Contact</a>
+			<a href="despre-noi.html">Despre noi</a>
+			<a href="galerie.html">Galerie produse</a>	
+		</div>
+	</div>
+
+	<div class="description">
+		<h1>Bine ati venit!</h1>
+		<p>
+			Acesta este un site de prezentare a unor tablouri de calitate realizate cu vopseluri acrilice pe panza de tip canvas.
+			Mai jos este o scurta prezentare a operelor de arta realizate dupa orice model.
+		</p>
+	</div>
+
+	<!-- Bootstrap carousel -->
+	<div class="container">
+	 		 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+			    <!-- Indicators(little dots at the bottom of each slide)-->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			    </ol>
+
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner">
+
+			      <div class="item active">
+			        <img src="images/pic1.jpeg" alt="Port">
+			        <h3>Port</h3>
+			      </div>
+
+			      <div class="item">
+			        <img src="images/pic7.jpeg" alt="Padure">
+			        <h3>Padure</h3>
+			      </div>
+			    
+			      <div class="item">
+			        <img src="images/pic2.jpg" alt="Lac">
+			        <h3>Lac</h3>
+			      </div>
+
+			    </div>
+
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left"></span>
+			      <span class="sr-only">Previous</span>
+			      <!-- sr = screen reader only helps blind people to navigate easier on your website. It is hidden. -->
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+
+			 </div>
+
+	</div>
+
+	<div class="h6-text">
+		<h6>Acest site a fost realizat de TDana</h6>
+	</div>
+	
+</body>
+</html>

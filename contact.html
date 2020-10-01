@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Tablouri-Canvas</title>
+	<link rel="icon" type="image/png" href="images/brush.png" sizes="16x16">
+
+	<link rel="stylesheet" type="text/css" href="styles/contact.css">
+	<link rel="stylesheet" type="text/css" href="styles/general.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script>
+
+		$(document).ready(enableFacebookContact);
+
+		function enableFacebookContact()
+		{
+			$("#icon").on('click', openContact);
+		}
+
+		function openContact()
+		{
+			if($("#contact").is(":hidden")) {
+				$("#contact").css('display', 'grid');
+			} else {
+				$("#contact").hide();
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<!-- For Facebook add-in -->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
+
+	<!-- menu dropdown  -->
+	<div class="dropdown">
+		<button class="dropdown-button">Tablouri-Canvas</button>
+		<div class="dropdown-content">
+			<a href="index.html">Acasa</a>
+			<a href="#">Contact</a>
+			<a href="despre-noi.html">Despre noi</a>
+			<a href="galerie.html">Galerie produse</a>	
+		</div>
+	</div>
+
+	<div class="contact-text">
+		<h2>Tablourile sunt realizate in orasul Sibiu, dar pot fi transmise oriunde in tara prin &rarr;</h2>
+		<ul>
+			<li>Posta Romana</li>
+			<li>Fan Curier</li>
+			<li>Tren CFR</li>
+		</ul>
+		
+		<h5>Dati click pe butonul de mai jos pentru a gasi pagina de Facebook pe care se posteaza fiecare tablou nou.</h5>
+	</div>
+
+	<img src="images/facebook-icon.jpg" alt="facebook-image" id="icon">
+
+	<div id="contact">		
+		<!-- embed another document within the current document using iframe -->
+		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPaintCanvasAdi%2F&tabs&width=400&height=300&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="400" height="300" style="border:none;overflow:hidden" allow="encrypted-media"></iframe>
+	</div>
+
+	<div class="date-contact">
+		<h3>Date de contact</h3>
+		<div class="grid-container">
+			<div class="grid-item">adrianghita@gmail.com</div>
+			<div class="grid-item">0770231245</div>
+			<div class="grid-item">0722455676</div>
+		</div>
+	</div>
+	
+	<div id="formular">
+		<form>
+			<input type="text" name="nume" placeholder="Numele tau">
+			<br>
+			<textarea placeholder="Mesajul tau"></textarea>
+			<br>
+			<input type="submit" name="submit" value="Trimite formular">
+		</form>
+	</div>
+
+
+</body>
+</html>

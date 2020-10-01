@@ -1,0 +1,47 @@
+/*Descripion*/
+.description {
+    position: relative;
+  	margin-left: 10rem;
+  	margin-right: 10rem;
+  	margin-top: 1rem;
+  	margin-bottom: 4rem;
+  	text-align: center;
+}
+.description h1 {
+	color: #6ab446;
+	font-size: 2em;
+}
+.description p {
+  	color: #37474f;
+  	font-size: 1em; 
+}
+
+/*carousel */
+
+.container {
+	position: relative;
+	width:70% !important;
+	height:100% !important;
+}
+
+.carousel-indicators {
+	bottom: 3rem !important;
+	margin-bottom: 1em !important;
+}
+.carousel-inner{
+	overflow: visible !important;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+ 	width: 70% !important;
+  	margin: auto;
+}
+.carousel-inner > .item > h3 {
+	color: #37474f;
+	text-align: center;
+	font-size: 1em; 
+}
+
+.h6-text {
+	margin-top: 2%;
+}

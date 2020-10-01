@@ -1,0 +1,53 @@
+.despre-noi-text {
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 10vh;
+}
+#like-button {
+	position: absolute;
+	margin-left: 20% !important;
+	margin-top: 25vh !important;
+
+	-webkit-animation-name: animation1;
+  	-webkit-animation-duration: 5s;
+  	-webkit-animation-iteration-count: infinite;
+
+	animation-name: animation1;
+ 	animation-duration: 5s;
+  	animation-iteration-count: infinite;
+
+	animation-timing-function: linear;
+
+}
+
+@keyframes animation1 {
+	from {margin-left: 20%;}
+	to {margin-left: 60%; margin-right: 30%;}
+}
+
+.own-table {
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 40vh;
+}
+
+.own-table table {
+	-webkit-animation-name: animation3;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+
+	animation-name: animation3;
+	animation-duration: 2s;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes animation3 {
+	from {background-color: purple;}
+	to {background-color: red;}
+}
+
+.own-audio {
+	position: absolute;
+	margin-top: 50vh;
+    margin-left: 20%;
+}
